@@ -193,8 +193,7 @@
   color: var(--bx-orange);
 }
 
-.bx-menu > li.is-active:not(.has-children) > a::before,
-.bx-menu > li > a:hover::before {
+.bx-menu > li.is-active:not(.has-children) > a::before {
   width: 100%;
 }
 
