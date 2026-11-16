@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - master
+      - claude/ai-website-cloner-setup-l136w6
   pull_request:
     branches:
       - master
+      - claude/ai-website-cloner-setup-l136w6
 
 jobs:
   quality:

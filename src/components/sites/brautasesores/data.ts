@@ -1,4 +1,6 @@
-export const ASSET = "/sites/brautasesores";
+/* Prefixed with the deploy base path (e.g. "/braut" on GitHub Pages). */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+export const ASSET = `${BASE_PATH}/sites/brautasesores`;
 
 export type NavItem = {
   label: string;

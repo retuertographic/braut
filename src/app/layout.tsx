@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   },
   description:
     "BRAUT ASESORES es una asesoría para autónomos, pymes y emprendedores orientada a los nuevos tiempos, con sedes en Barcelona y Tenerife.",
-  icons: { icon: "/sites/brautasesores/recurso-1mdpi1.png" },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/sites/brautasesores/recurso-1mdpi1.png` },
 };
 
 export default function RootLayout({
