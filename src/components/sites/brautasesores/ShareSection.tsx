@@ -1,8 +1,17 @@
-import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { SITE_URL } from "./data";
 
 /* "Comparte esta página" — share links point to the page's public URL on the source domain. */
-export function ShareSection({ path = "/", title = "Inicio" }: { path?: string; title?: string }) {
+export function ShareSection({
+  path = "/",
+  title = "Inicio",
+  className = "",
+}: {
+  path?: string;
+  title?: string;
+  /* Extra classes, e.g. the white variant used on the service pages. */
+  className?: string;
+}) {
   const url = `${SITE_URL}${path}`;
   const enc = encodeURIComponent(url);
   const links = [
@@ -15,12 +24,12 @@ export function ShareSection({ path = "/", title = "Inicio" }: { path?: string; 
     {
       label: "LinkedIn",
       href: `https://www.linkedin.com/shareArticle?mini=true&url=${enc}`,
-      icon: <FaLinkedin />,
+      icon: <FaLinkedinIn />,
     },
     { label: "WhatsApp", href: `https://api.whatsapp.com/send?text=${enc}`, icon: <FaWhatsapp /> },
   ];
   return (
-    <section className="bx-share">
+    <section className={`bx-share ${className}`.trim()}>
       <div className="bx-container">
         <h6>Comparte esta página</h6>
         <ul>

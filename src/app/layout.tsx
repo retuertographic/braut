@@ -7,10 +7,13 @@ import {
   Montserrat,
   Nunito,
   Open_Sans,
+  Poppins,
   Varela_Round,
 } from "next/font/google";
 import "./globals.css";
 import "./braut.css";
+import "./braut-servicios.css";
+import "./braut-about.css";
 import { CookieConsent } from "@/components/sites/brautasesores/CookieConsent";
 import { Footer } from "@/components/sites/brautasesores/Footer";
 import { Header } from "@/components/sites/brautasesores/Header";
@@ -20,6 +23,11 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 });
+
+/* Extra Montserrat weights (thin title, semibold plan card) used on the service pages. */
+const montserratExtra = Montserrat({ variable: "--font-montserrat-extra", subsets: ["latin"], weight: ["100", "600"] });
+
+const poppins = Poppins({ variable: "--font-poppins", subsets: ["latin"], weight: ["400"] });
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -87,6 +95,8 @@ export default function RootLayout({
     lato.variable,
     fjallaOne.variable,
     nunito.variable,
+    poppins.variable,
+    montserratExtra.variable,
   ].join(" ");
 
   return (
