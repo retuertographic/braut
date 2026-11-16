@@ -53,7 +53,14 @@ export function Header() {
           <nav className="bx-header-nav" aria-label="Principal">
             <ul className="bx-menu">
               {NAV.map((item) => (
-                <li key={item.href} className={isActive(pathname, item.href) ? "is-active" : undefined}>
+                <li
+                  key={item.href}
+                  className={
+                    [isActive(pathname, item.href) && "is-active", item.children && "has-children"]
+                      .filter(Boolean)
+                      .join(" ") || undefined
+                  }
+                >
                   <Link href={item.href}>
                     {item.label}
                     {item.children && (

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import {
   Archivo_Narrow,
+  Fjalla_One,
   Heebo,
   Lato,
   Montserrat,
+  Nunito,
   Open_Sans,
   Varela_Round,
 } from "next/font/google";
@@ -49,6 +51,18 @@ const lato = Lato({
   weight: ["400", "700"],
 });
 
+const fjallaOne = Fjalla_One({
+  variable: "--font-fjalla-one",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const nunito = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Inicio",
@@ -71,6 +85,8 @@ export default function RootLayout({
     archivoNarrow.variable,
     varelaRound.variable,
     lato.variable,
+    fjallaOne.variable,
+    nunito.variable,
   ].join(" ");
 
   return (
