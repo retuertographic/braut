@@ -342,7 +342,8 @@ a.bxs-card-btn:focus-visible {
 }
 
 .bxs-plan-card h3 {
-  margin-bottom: 20px !important;
+  /* 20px title margin collapses with the empty price container's 30px. */
+  margin-bottom: 30px !important;
   font-family: var(--font-montserrat-extra), var(--font-montserrat), sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -350,7 +351,7 @@ a.bxs-card-btn:focus-visible {
 }
 
 .bxs-plan-card ul {
-  margin: 0 0 65px;
+  margin: 0 0 55px;
   padding: 0;
   list-style: none;
 }

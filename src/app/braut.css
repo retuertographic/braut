@@ -956,6 +956,13 @@
   line-height: 38px;
 }
 
+/* Source: the Servicios button sits 2px under the quote title, 200px above the section end. */
+@media (min-width: 768px) {
+  .bx-quote .bx-btn-blue {
+    margin: 2px 10px 0;
+  }
+}
+
 .bx-quote h5 {
   margin-bottom: 30px !important;
   font-family: var(--font-varela-round), sans-serif;
@@ -1364,7 +1371,7 @@ textarea.bx-input {
 }
 
 .bx-iconlist {
-  margin: 0 0 150px;
+  margin: 0 0 180px;
   padding: 0;
   list-style: none;
 }

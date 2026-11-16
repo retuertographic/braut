@@ -336,13 +336,6 @@
   margin-top: 100px; /* collapses with the form box's 30px bottom margin, as on the source */
 }
 
-/* Source: the Servicios button sits 2px under the quote title, 200px above the section end. */
-@media (min-width: 768px) {
-  .bxa-quote .bx-btn-blue {
-    margin: 2px 10px 0;
-  }
-}
-
 @media (max-width: 991px) {
   .bx-form-box.bxa-form-dark {
     margin-bottom: 20px;
