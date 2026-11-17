@@ -1488,6 +1488,7 @@ a.bx-iconlist-item:hover .bx-iconlist-title {
   }
   .bx-footer ul {
     flex-wrap: wrap;
+    row-gap: 0;
     justify-content: center;
   }
 }

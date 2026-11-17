@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { COOKIES_URL } from "./data";
 
@@ -59,7 +60,7 @@ export function CookieConsent() {
         Esta página web emplea tanto cookies propias como de terceros técnicas, para recopilar información
         estadística de su navegación, así como para mejorar su experiencia de usuario. Al navegar por este sitio
         web, usted accede al empleo de estas cookies. Puede cambiar la configuración de su navegador para no
-        aceptar su instalación u obtener más información en nuestra <a href={COOKIES_URL}>política de cookies</a>.
+        aceptar su instalación u obtener más información en nuestra <Link href={COOKIES_URL}>política de cookies</Link>.
       </span>
       <button
         type="button"

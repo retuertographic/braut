@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Legal pages (Cookies, Aviso legal, Política de privacidad) and Sitemap
+   Values measured from brautasesores.com.
+   ========================================================================== */
+
+.bxl-hero {
+  padding: 130px 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+}
+
+.bxl-hero h2 {
+  color: #121c25;
+  font-family: var(--font-montserrat-extra), var(--font-montserrat), sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.bxl-body {
+  padding: 120px 0 294px;
+  background: #fff;
+}
+
+.bxl-text {
+  max-width: 730px;
+  margin: 0 auto;
+  color: #61686d;
+  font-family: var(--font-montserrat-extra), var(--font-montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+}
+
+.bxl-text p {
+  margin: 0 0 16px;
+}
+
+.bxl-text h1,
+.braut-body .bxl-text h1 {
+  margin: 0 0 8px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.bxl-text strong,
+.bxl-text b {
+  font-weight: 900;
+}
+
+.bxl-text ul,
+.bxl-text ol {
+  margin: 0 0 16px;
+  padding-left: 40px;
+}
+
+.bxl-text ul {
+  list-style: disc;
+}
+
+.bxl-text ol {
+  list-style: decimal;
+}
+
+@media (max-width: 767px) {
+  .bxl-hero {
+    padding: 60px 0;
+  }
+  .bxl-hero h2 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+  .bxl-body {
+    padding: 41px 0 75px;
+  }
+  .bxl-text {
+    font-size: 14px;
+  }
+  .bxl-text p {
+    font-size: 13px;
+  }
+  .bxl-text h1,
+  .braut-body .bxl-text h1 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Sitemap (JMap-style tree)
+   -------------------------------------------------------------------------- */
+.bxm-page {
+  padding: 100px 0;
+}
+
+.bxm-page h1 {
+  margin: 0 0 8px;
+  color: #383838;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.bxm-tree,
+.bxm-tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bxm-item {
+  position: relative;
+  padding-left: 16px;
+  line-height: 30px;
+}
+
+.bxm-tree > .bxm-item {
+  line-height: 32px;
+}
+
+.bxm-item ul {
+  margin-left: 8px;
+  padding-left: 0;
+  border-left: 1px solid #808080;
+}
+
+.bxm-item ul .bxm-item {
+  padding-left: 8px;
+}
+
+.bxm-item ul .bxm-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 15px;
+  border-bottom: 1px solid #808080;
+}
+
+.bxm-item ul .bxm-item.has-children {
+  padding-left: 0;
+}
+
+.bxm-hit {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 1px solid #919191;
+  background:
+    linear-gradient(#333, #333) center / 5px 1px no-repeat,
+    linear-gradient(#333, #333) center / 1px 5px no-repeat,
+    #fff;
+  cursor: pointer;
+}
+
+.bxm-item.is-open > .bxm-hit {
+  background:
+    linear-gradient(#333, #333) center / 5px 1px no-repeat,
+    #fff;
+}
+
+.bxm-item ul .bxm-item.has-children > .bxm-hit {
+  position: relative;
+  left: auto;
+  top: auto;
+  display: inline-block;
+  margin-right: 0;
+  vertical-align: 1px;
+}
+
+.bxm-folder {
+  position: relative;
+  padding: 0 0 0 17px;
+  border: 0;
+  background: none;
+  color: #383838;
+  font: inherit;
+  cursor: pointer;
+}
+
+.bxm-folder::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 11px;
+  height: 9px;
+  border-radius: 1px;
+  background: linear-gradient(#ffd75e, #f2a400);
+}
+
+.bxm-item.is-open > .bxm-folder::before {
+  width: 14px;
+  height: 11px;
+  left: -2px;
+}
+
+.bxm-tree > .bxm-item.is-open > .bxm-folder {
+  color: #383838;
+}
+
+.bxm-folder:hover {
+  color: #e00;
+}
+
+.bxm a {
+  color: var(--bx-orange);
+}
+
+.bxm a:hover,
+.bxm a.is-selected {
+  text-decoration: underline;
+}
+
+.bxm a.is-selected {
+  background: #f1f1f1;
+}
+
+@media (max-width: 767px) {
+  .bxm-page {
+    padding: 40px 0;
+  }
+  .bxm-page h1 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}

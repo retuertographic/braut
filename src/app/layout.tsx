@@ -12,6 +12,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import "./braut.css";
+import "./braut-legal.css";
 import "./braut-servicios.css";
 import "./braut-about.css";
 import { CookieConsent } from "@/components/sites/brautasesores/CookieConsent";
@@ -25,7 +26,7 @@ const montserrat = Montserrat({
 });
 
 /* Extra Montserrat weights (thin title, semibold plan card) used on the service pages. */
-const montserratExtra = Montserrat({ variable: "--font-montserrat-extra", subsets: ["latin"], weight: ["100", "600"] });
+const montserratExtra = Montserrat({ variable: "--font-montserrat-extra", subsets: ["latin"], weight: ["100", "300", "600", "800", "900"] });
 
 const poppins = Poppins({ variable: "--font-poppins", subsets: ["latin"], weight: ["400"] });
 

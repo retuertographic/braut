@@ -96,7 +96,7 @@ export function Footer() {
           <ul>
             {LEGAL_LINKS.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <Link href={link.href}>{link.label}</Link>
               </li>
             ))}
           </ul>

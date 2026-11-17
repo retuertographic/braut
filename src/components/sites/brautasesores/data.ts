@@ -68,17 +68,14 @@ export const FOOTER_MENUS: { title: string; links: { label: string; href: string
   },
 ];
 
-/* Legal pages are out of scope for this clone and still point to the source site. */
 export const LEGAL_LINKS = [
-  { label: "Sitemap", href: "https://www.brautasesores.com/sitemap" },
-  { label: "Cookies", href: "https://www.brautasesores.com/cookies" },
-  { label: "Aviso legal", href: "https://www.brautasesores.com/aviso-legal" },
-  {
-    label: "Política de privacidad",
-    href: "https://www.brautasesores.com/politica-de-privacidad",
-  },
+  { label: "Sitemap", href: "/sitemap" },
+  { label: "Cookies", href: "/cookies" },
+  { label: "Aviso legal", href: "/aviso-legal" },
+  { label: "Política de privacidad", href: "/politica-de-privacidad" },
 ];
 
-export const PRIVACY_URL = "https://www.brautasesores.com/politica-de-privacidad";
-export const COOKIES_URL = "https://www.brautasesores.com/cookies";
-export const SITE_URL = "https://www.brautasesores.com";
+export const PRIVACY_URL = "/politica-de-privacidad";
+export const COOKIES_URL = "/cookies";
+/* Public URL used in the share links; set NEXT_PUBLIC_SITE_URL at build time (falls back to the live domain). */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.brautasesores.com").replace(/\/$/, "");

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { FaComments } from "react-icons/fa";
 import { CONTACT, PRIVACY_URL } from "./data";
@@ -82,7 +83,7 @@ export function ContactForm({ className = "bx-form-box" }: Props) {
           <input type="checkbox" name="policy" />
           <span className="bx-form-check-box" aria-hidden="true" />
           <span>
-            He leído y acepto la <a href={PRIVACY_URL}>Política de privacidad</a>
+            He leído y acepto la <Link href={PRIVACY_URL}>Política de privacidad</Link>
             {errors.policy && <span className="bx-form-error">{errors.policy}</span>}
           </span>
         </label>
