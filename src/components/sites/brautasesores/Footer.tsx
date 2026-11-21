@@ -90,7 +90,9 @@ export function Footer() {
           <span className="bx-footer-copy">
             © 2020 Braut Asesores. Todos los derechos reservados.{" "}
             <a href="https://retuertographicdesign.com/" target="_blank" rel="noopener noreferrer">
-              Desarrollado por Retuerto Graphic Design
+              Desarrollado por Retuerto Graphic Design. Ricardo Retuerto Barrera |{" "}
+              <span className="bx-nowrap">Spain-Germany</span> | <span className="bx-nowrap">0034 922 971 723</span> ·{" "}
+              <span className="bx-nowrap">0049 30 31878629</span>
             </a>
           </span>
           <ul>

@@ -1602,3 +1602,7 @@ a.bx-iconlist-item:hover .bx-iconlist-title {
     margin-bottom: 10px;
   }
 }
+
+.bx-nowrap {
+  white-space: nowrap;
+}
